@@ -530,8 +530,9 @@ h2 {
 
   .bouquet-wrap {
     width: min(100%, 380px);
-    height: min(420px, 66vh);
-    margin-top: 0.7rem;
+    height: min(410px, 64vh);
+    margin: -0.8rem auto 0 0;
+    transform: translate(-10px, -26px);
   }
 
   .paper {
@@ -577,7 +578,7 @@ h2 {
   .l3, .l4 { display: none; }
 
   .flowers {
-    transform: translate(28px, 112px);
+    transform: translate(12px, 84px);
   }
 
   .flower {
@@ -630,6 +631,51 @@ h2 {
     width: 168px;
     max-width: 168px;
   }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .bouquet-wrap {
+    width: min(88vw, 440px);
+    height: min(480px, 72vh);
+  }
+
+  .flowers {
+    transform: translate(34px, 100px);
+  }
+
+  .paper {
+    width: 186px;
+    height: 236px;
+  }
+
+  .stem {
+    bottom: 102px;
+  }
+
+  .leaf {
+    width: 78px;
+    height: 32px;
+  }
+
+  .l1 { top: 250px; }
+  .l2 { top: 258px; }
+
+  .flower {
+    width: 62px;
+    height: 62px;
+  }
+
+  .f1 { left: 66px; top: 54px; }
+  .f2 { left: 106px; top: 26px; }
+  .f3 { left: 148px; top: 18px; }
+  .f4 { left: 194px; top: 24px; }
+  .f5 { left: 236px; top: 44px; }
+  .f6 { left: 122px; top: 86px; }
+  .f7 { left: 206px; top: 90px; }
+  .f8 { left: 88px; top: 72px; }
+  .f9 { left: 166px; top: 66px; }
+  .f10 { left: 216px; top: 80px; }
+  .f11 { left: 142px; top: 108px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
