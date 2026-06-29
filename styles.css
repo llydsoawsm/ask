@@ -491,24 +491,81 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  .app {
+    padding: 1rem 0.8rem 1.25rem;
+  }
+
   .view {
-    width: min(95vw, 720px);
+    width: min(100%, 520px);
+    padding: 1.1rem 0.9rem 1.3rem;
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+  }
+
+  h1 {
+    font-size: clamp(2.05rem, 9vw, 2.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 7vw, 2.25rem);
+  }
+
+  .subtitle {
+    max-width: 22ch;
+    margin-inline: auto;
   }
 
   .button-zone {
-    width: min(96vw, 420px);
-    height: clamp(110px, 24vh, 170px);
+    width: min(100%, 390px);
+    height: clamp(108px, 22vh, 156px);
+  }
+
+  .actions {
+    gap: 0.6rem;
   }
 
   .bouquet-wrap {
-    width: min(94vw, 420px);
-    height: min(460px, 78vh);
+    width: min(100%, 380px);
+    height: min(420px, 66vh);
+    margin-top: 0.7rem;
   }
 
   .paper {
-    width: 176px;
-    height: 226px;
+    width: 170px;
+    height: 216px;
   }
+
+  .bouquet-wrap::before {
+    inset: auto 28px 22px 28px;
+    height: 72px;
+  }
+
+  .bouquet-wrap::after {
+    width: 126px;
+    height: 22px;
+    bottom: 18px;
+  }
+
+  .stem {
+    bottom: 98px;
+    width: 7px;
+  }
+
+  @keyframes growStem {
+    to { height: 152px; }
+  }
+
+  .leaf {
+    width: 72px;
+    height: 30px;
+  }
+
+  .l1 { left: 50%; top: 234px; transform: translateX(-20px) rotate(-28deg) scale(0.9); }
+  .l2 { left: 50%; top: 240px; transform: translateX(10px) rotate(22deg) scale(0.92); }
 
   .s1 { transform: translateX(-18px) rotate(-22deg); }
   .s2 { transform: translateX(-10px) rotate(-10deg); }
@@ -516,25 +573,29 @@ h2 {
   .s4 { transform: translateX(8px) rotate(8deg); }
   .s5 { transform: translateX(18px) rotate(18deg); }
 
-  .l1 { left: 62px; top: 236px; }
-  .l2 { left: 210px; top: 246px; }
-  .l3 { left: 98px; top: 266px; }
-  .l4 { left: 224px; top: 272px; }
-
   /* hide lower two leaves on small screens */
   .l3, .l4 { display: none; }
 
-  .f1 { left: 58px; top: 54px; }
-  .f2 { left: 98px; top: 26px; }
-  .f3 { left: 140px; top: 12px; }
-  .f4 { left: 186px; top: 22px; }
-  .f5 { left: 228px; top: 42px; }
-  .f6 { left: 112px; top: 82px; }
-  .f7 { left: 196px; top: 86px; }
-  .f8 { left: 84px; top: 70px; }
-  .f9 { left: 160px; top: 66px; }
-  .f10 { left: 208px; top: 78px; }
-  .f11 { left: 134px; top: 108px; }
+  .flowers {
+    transform: translate(28px, 112px);
+  }
+
+  .flower {
+    width: 60px;
+    height: 60px;
+  }
+
+  .f1 { left: 54px; top: 52px; }
+  .f2 { left: 92px; top: 26px; }
+  .f3 { left: 132px; top: 12px; }
+  .f4 { left: 174px; top: 20px; }
+  .f5 { left: 212px; top: 40px; }
+  .f6 { left: 108px; top: 80px; }
+  .f7 { left: 188px; top: 84px; }
+  .f8 { left: 80px; top: 68px; }
+  .f9 { left: 152px; top: 64px; }
+  .f10 { left: 198px; top: 76px; }
+  .f11 { left: 128px; top: 104px; }
 
   .actions {
     min-height: 66px;
@@ -550,8 +611,25 @@ h2 {
     gap: 0.25rem;
   }
 
+  .details-card {
+    width: 100%;
+    padding: 0.95rem 0.9rem;
+  }
+
+  .row strong {
+    overflow-wrap: anywhere;
+  }
+
   /* smaller portrait on narrow screens */
-  .portrait-wrap { width: 180px; max-width: 180px; }
+  .celebrate-wrap {
+    width: min(100%, 320px);
+    height: min(300px, 40vh);
+  }
+
+  .portrait-wrap {
+    width: 168px;
+    max-width: 168px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
