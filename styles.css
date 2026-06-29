@@ -531,8 +531,8 @@ h2 {
   .bouquet-wrap {
     width: min(100%, 380px);
     height: min(410px, 64vh);
-    margin: -0.8rem auto 0 0;
-    transform: translate(-10px, -26px);
+    margin: -0.8rem auto 0;
+    transform: translateY(-26px);
   }
 
   .paper {
@@ -578,7 +578,7 @@ h2 {
   .l3, .l4 { display: none; }
 
   .flowers {
-    transform: translate(12px, 84px);
+    transform: translate(14px, 60px);
   }
 
   .flower {
