@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Invite</title>
+    <meta
+      name="description"
+      content="A playful date invite with flowers and event details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <main class="app" aria-live="polite">
+      <section id="invite" class="view view-active" aria-labelledby="invite-title">
+        <p class="eyebrow">Special question</p>
+        <h1 id="invite-title">date with me baby?</h1>
+        <p class="subtitle">I made this little page just for you.</p>
+
+        <div id="buttonZone" class="button-zone" aria-label="Answer buttons">
+          <div class="actions">
+            <button id="yesBtn" class="btn btn-yes" type="button">Yes</button>
+          </div>
+          <button id="noBtn" class="btn btn-no" type="button" aria-label="No button">No</button>
+        </div>
+
+      </section>
+
+      <section id="bouquet" class="view" aria-labelledby="bouquet-title" hidden>
+        <p class="eyebrow">Yay</p>
+        <h2 id="bouquet-title">A bouquet for you</h2>
+        <div class="bouquet-wrap" aria-hidden="true">
+          <div class="paper"></div>
+          <div class="stems">
+            <span class="stem s1"></span>
+            <span class="stem s2"></span>
+            <span class="stem s3"></span>
+            <span class="stem s4"></span>
+            <span class="stem s5"></span>
+          </div>
+          <div class="leaves">
+            <span class="leaf l1"></span>
+            <span class="leaf l2"></span>
+            <span class="leaf l3"></span>
+            <span class="leaf l4"></span>
+          </div>
+          <div class="flowers">
+            <span class="flower f1"></span>
+            <span class="flower f2"></span>
+            <span class="flower f3"></span>
+            <span class="flower f4"></span>
+            <span class="flower f5"></span>
+            <span class="flower f6"></span>
+            <span class="flower f7"></span>
+            <span class="flower f8"></span>
+            <span class="flower f9"></span>
+            <span class="flower f10"></span>
+            <span class="flower f11"></span>
+          </div>
+          <div id="petals" class="petals"></div>
+        </div>
+        <button id="continueBtn" class="text-btn" type="button">Continue</button>
+      </section>
+
+      <section id="celebrate" class="view" aria-labelledby="celebrate-title" hidden>
+        <p class="eyebrow">Yay</p>
+        <h2 id="celebrate-title">Lloydie is happy</h2>
+        <div class="celebrate-wrap" aria-hidden="false">
+          <div class="portrait-wrap">
+            <img src="me.jpg" alt="Lloydie" class="portrait" />
+          </div>
+        </div>
+        <button id="toDetailsBtn" class="text-btn" type="button">See details</button>
+      </section>
+
+      <section id="details" class="view" aria-labelledby="details-title" hidden>
+        <p class="eyebrow">Plan details</p>
+        <h2 id="details-title">Our date details</h2>
+        <div class="details-card">
+          <div class="row"><span>Place</span><strong>Green Ridge Cafe and Restau</strong></div>
+          <div class="row"><span>Time</span><strong>July 6, 2026, 2-3pm</strong></div>
+          <div class="row"><span>Outfit</span><strong>White outfit</strong></div>
+          <div class="row"><span>Transpo</span><strong>Motor if possible, trike if not</strong></div>
+          <div class="row"><span>Mood</span><strong>Cute and comfy</strong></div>
+          <div class="row"><span>Note</span><strong>i really want to go in the greenridge with you 'cause that place looks amazing baby, see you there and i miss you so much!!</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
